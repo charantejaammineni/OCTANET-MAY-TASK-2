@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('images/cursor.png')19 6, auto;
+}
+header{
+    top: 0;
+    position: sticky;
+}
+nav{
+    width: 100%;
+    background: #0a0a0a;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 1.2em;
+    gap: .671em;
+}
+.logo a img{
+    width: auto;
+    height: 50px;
+    border-radius: 20%;
+}
+.logo a h1{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.menu{
+    padding-left: 60%;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-end;    
+}
+.menu ul li,a{
+    color: snow;
+    text-decoration: none;
+    list-style: none;
+}
+.main{
+    background-image: url('images/body-bg.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 95vh;
+    padding-top: 7.5em;
+    display: flex;
+    justify-content: end;
+    padding-right: 10.5em;
+    
+}
+.container{
+    width: 30%;
+    height: 400px;
+    backdrop-filter: blur(100px);
+    border-radius: 10%;
+    box-shadow: 0 0 40px rgb(241, 238, 7);
+    cursor: inherit;
+}
+.todo-box{
+    padding: 3.765em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    cursor: pointer;
+}
+.todo-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: inherit;  
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid green;
+    color: snow;
+    height: 2em;
+    outline: none;
+    cursor: pointer;
+
+}
+.todo-list:has(.todo-chk:checked){
+    color: rgb(242, 237, 237);
+    cursor: pointer;
+    text-decoration: line-through wavy 1.5px;
+    background-color: rgba(128, 128, 128, 0.265);
+    width: 15em;
+    height: 2.3em;
+    border-radius: 15px;
+    order: 1;
+}
+footer{
+    text-align: center;
+    height: max-content;
+    background-color: #181818;
+}
+footer p{
+    color: rgb(250, 250, 255);
+    padding: 10px 0;
+}
